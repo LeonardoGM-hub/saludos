@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css" tipe="text/css">
 </head>
 <body>
+    
+<!-- Inicia con un mensaje de bienvenida adjuntado con una imagen con el logo del
+ cbtis217, la portada cuenta con el nombre del alumno, la fecha y el nombre de la
+ practica junto con un boton que lo dirige a la siguiente pagina de los saludos 
+ en los diferentes idiomas-->
+
     <h1>Bienvenidos <samp> CBTis217 </samp></h1>
     <h2>Alumno:Leonardo Gaviña Morales</h2>
     <h3>Pagina con varias ramas</h3>
