@@ -1,0 +1,49 @@
+html{
+    background-color: #7e2626;
+}
+h1{
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: .2em;
+    background-image: url(cbtis217.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 170px;
+    margin: 0;
+}
+body{
+    font-family:'Lucida Sans Unicode', sans-serif;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: #caa51e 1px solid;
+    text-align: justify;
+    margin: 10px auto;
+    width: 900px;
+}
+h1 samp{
+    color: #eeae38;
+}
+nav {
+    background-color: #123cf3; 
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 100px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #1c8bd4;
+    color: #eab308;
+}
