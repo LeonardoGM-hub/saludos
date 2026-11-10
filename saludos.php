@@ -1,14 +1,15 @@
 <?php
+// iniciamos con las variables en blanco
 $idioma = "";
 $saludo = "";
 
-
+// aqui se almacena la informacion que se alla agregado a la caja de texto
+// y se guarda en la variable idioma.
 if (isset($_POST["idioma"])) {
-
-
     $idioma = $_POST["idioma"];
 
-
+    //en esta parte dependiendo de lo que ingrese el usuario, pregunta que sea igual
+    //y manda un saludo con su respectivo idioma 
     if ($idioma == "espanol") {
         $saludo = "¡Hola! ¿Cómo estás?";
     }
@@ -38,12 +39,13 @@ if (isset($_POST["idioma"])) {
     <title>Document</title>
 </head>
 <body>
+<!--Nuevamente agregamos la imagen del logo y dejamos algunas instrucciones basicas-->
     <h1>Bienvenidos <samp> CBTis217 </samp></h1>
     <h2>Saludos en distintos idiomas</h2>
     <p>Selecciona un idioma</p>
     <div class="contenedor">
     <form method="POST">
-
+<!--Se configura una caja de texto para dar respuestas fijas--> 
      <select name="idioma" required>
             <option value="">Selecciona...</option>
             <option value="espanol">Español</option>
@@ -54,14 +56,16 @@ if (isset($_POST["idioma"])) {
             <option value="japones">Japonés</option>
         </select>
         <br><br>
-
+<!--agregamos un boton para confirmar el idioma --> 
         <button type="submit">Mostrar saludo</button>
     </form>
        <?php
+       // Se imprime la respuesta del saludo 
     if ($saludo != "") {
         echo "<div class='resultado'><h3>$saludo</h3></div>";
     }
     ?>
+    <!--Boton de regreso al inicio -->
     <nav>
     <a href="bienvenida.php">Inicio</a><br>
     </nav>
